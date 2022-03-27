@@ -1,0 +1,225 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#F2F4F7"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/UpperButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#0000"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="#0000"
+            app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/timerProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/pomoTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_pomo"
+            android:text="25:00"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp">
+
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/determinateBar"
+            style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pomoTimer"
+            android:layout_alignLeft="@id/pomoTimer"
+            android:layout_alignRight="@id/pomoTimer"
+            android:indeterminateTint="#4CAF50"
+            android:indeterminateTintMode="src_in"
+            android:paddingLeft="15dp"
+            android:progress="50"
+            android:progressBackgroundTint="#251D1D"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id = "@+id/taskBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id = "@+id/taskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binary Search Trees"
+            android:textStyle = "bold"
+            android:textSize = "25dp">
+
+        </TextView>
+        <TextView
+            android:id = "@+id/topics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Topics"
+            android:textSize = "15dp"
+            android:layout_below="@id/taskTitle">
+        </TextView>
+        <TextView
+            android:id = "@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30:00"
+            android:textSize = "25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/topics"
+            android:background = "@drawable/rounded_pomo"
+            android:padding="5dp"
+            android:textColor="#FFFFFF">
+        </TextView>
+        <View
+            android:id="@+id/lineDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below = "@id/topics"
+            android:layout_centerVertical="true"
+            android:background="#c0c0c0" />
+        <TableLayout
+            android:id="@+id/upcomingTaskTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineDivider"
+            >
+            <TableRow><TextView
+                android:id = "@+id/Firsttask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="In-Order Traversal"
+                android:textSize = "15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/topics"
+                android:padding="5dp"
+                android:layout_weight="0.5"
+                >
+            </TextView>
+                <TextView
+                    android:id = "@+id/FirstTaskStatus1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Now"
+                    android:textSize = "15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/topics"
+                    android:padding="5dp"
+                    android:layout_weight="0.5"
+                    >
+                </TextView>
+            </TableRow>
+            <TableRow><TextView
+                android:id = "@+id/Secondtask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Insertion"
+                android:textSize = "15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/topics"
+                android:padding="5dp"
+                android:layout_weight="0.5"
+                >
+            </TextView>
+                <TextView
+                    android:id = "@+id/SecondTaskStatus1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Up Next"
+                    android:textSize = "15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/topics"
+                    android:padding="5dp"
+                    android:layout_weight="0.5"
+                    >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up Next"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/pplus"
+        android:drawablePadding="10dp"/>
+    <RelativeLayout
+        android:id = "@+id/taskBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rect"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id = "@+id/taskTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heaps"
+            android:textStyle = "bold"
+            android:textSize = "25dp">
+
+        </TextView>
+        <TextView
+            android:id = "@+id/topics2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Topics"
+            android:textSize = "15dp"
+            android:layout_below="@id/taskTitle2">
+        </TextView>
+        <TextView
+            android:id = "@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30:00"
+            android:textSize = "25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/topics2"
+            android:background = "@drawable/rounded_pomo"
+            android:padding="5dp"
+            android:textColor="#FFFFFF">
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>

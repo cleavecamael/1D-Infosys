@@ -1,0 +1,169 @@
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2F4F7"
+        android:padding="10dip"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        tools:context=".MainActivity">
+
+
+        <RelativeLayout
+            android:id="@+id/UpperCard"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_rect"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#0000"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <ImageButton
+                android:id="@+id/settingsButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="#0000"
+                app:srcCompat="@drawable/ic_baseline_more_vert_24" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="Red Hat Display"
+                android:text="Sign Up"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id = "@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/UpperCard"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/poppinsblack"
+            android:hint="Email Address"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id = "@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/emailEditText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/poppinsblack"
+            android:hint="Password"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id = "@+id/confirmEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/passwordEditText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Confirm Password"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppinsblack"
+            android:paddingLeft="20dp"
+            android:textColorHint="#000000" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/confirmEditText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_sign_up"
+            android:text="Sign Up"
+            android:textAlignment="center"
+
+            android:textColor="#FFFFFF" />
+
+        <RelativeLayout
+            android:id = "@+id/dividerGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpButton"
+            android:layout_marginBottom="30dp">
+
+            <View
+                android:id="@+id/lineDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/signUpButton"
+                android:layout_centerVertical="true"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/orBox"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:text="OR"
+                android:layout_below="@id/signUpButton"
+                android:paddingRight = "10dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:background="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpGoogleButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/dividerGroup"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_google_sign_up"
+            android:text="Sign Up with Google"
+
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/google"
+            android:paddingLeft="15dp"
+            />
+
+    </RelativeLayout>
+</ScrollView>
