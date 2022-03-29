@@ -6,6 +6,7 @@
     <string name="username">Username</string>
     <string name="prompt_email">Email Address</string>
     <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password"> Confirm Password</string>
     <string name="action_register">Register</string>
     <string name="action_sign_in">Sign in</string>
     <string name="welcome">"Welcome!"</string>
@@ -13,10 +14,13 @@
     <string name="login_failed">"Login failed"</string>
     <string name="action_forgot_password">Forgot Password</string>
     <string name="sign_up">Sign Up</string>
+    <string name="sign_up_google">Sign Up with Google</string>
     <!--  Strings related to reset_password fragment  -->
     <string name="action_reset_password">Reset Password</string>
     <string name="action_back">Back</string>
     <!--  Strings related to main fragment  -->
+    <string name="tasks_title">Your Tasks</string>
+    <string name="next_lessons">Next Lessons</string>
     <string name="button_profile">Profile</string>
     <string name="logged_in">you are now logged in!</string>
     <!--  Strings related to profile fragment  -->
@@ -26,4 +30,8 @@
     <string name="action_change_email">Change Email</string>
     <string name="action_change_password">Change Password</string>
     <string name="action_delete_profile">Delete Profile</string>
+    <!--  Strings related to groupstudyroom fragment  -->
+    <string name="group_study_room_title">Group Study Rooms</string>
+    <!--  Strings related to studyroom fragment  -->
+    <string name="up_next">Up Next</string>
 </resources>

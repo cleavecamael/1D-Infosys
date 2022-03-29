@@ -164,7 +164,7 @@
                     android:id = "@+id/SecondTaskStatus1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Up Next"
+                    android:text="@string/up_next"
                     android:textSize = "15dp"
                     android:layout_alignParentRight="true"
                     android:layout_alignBottom="@id/topics"
@@ -179,7 +179,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Up Next"
+        android:text="@string/up_next"
         android:textStyle="bold"
         android:textSize="20dp"
         android:drawableLeft="@drawable/pplus"

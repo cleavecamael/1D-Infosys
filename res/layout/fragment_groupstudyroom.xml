@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Group Study Rooms"
+            android:text="@string/group_study_room_title"
             android:textSize= "25dp"
             android:textStyle="bold"
             >

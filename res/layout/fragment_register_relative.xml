@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:fontFamily="Red Hat Display"
-                android:text="Sign Up"
+                android:text="@string/sign_up"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -69,7 +69,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_edit_text"
             android:fontFamily="@font/poppinsblack"
-            android:hint="Email Address"
+            android:hint="@string/prompt_email"
             android:textSize="18dp"
             android:paddingLeft="20dp"
             android:textColorHint="@color/black" />
@@ -84,7 +84,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_edit_text"
             android:fontFamily="@font/poppinsblack"
-            android:hint="Password"
+            android:hint="@string/prompt_password"
             android:textSize="18dp"
             android:paddingLeft="20dp"
             android:textColorHint="@color/black" />
@@ -98,7 +98,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_edit_text"
-            android:hint="Confirm Password"
+            android:hint="@string/prompt_confirm_password"
             android:textSize="18dp"
             android:fontFamily="@font/poppinsblack"
             android:paddingLeft="20dp"
@@ -113,7 +113,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/rounded_sign_up"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textAlignment="center"
 
             android:textColor="@color/white" />
@@ -157,8 +157,7 @@
             android:layout_marginRight="30dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/rounded_google_sign_up"
-            android:text="Sign Up with Google"
-
+            android:text="@string/sign_up_google"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:drawableLeft="@drawable/google"
