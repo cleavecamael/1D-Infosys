@@ -34,4 +34,6 @@
     <string name="group_study_room_title">Group Study Rooms</string>
     <!--  Strings related to studyroom fragment  -->
     <string name="up_next">Up Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

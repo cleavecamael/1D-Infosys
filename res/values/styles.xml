@@ -1,5 +1,7 @@
 <resources>
     <!--  Base application theme.  -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    </style>
 
     <style name="button_cardview">
         <item name="android:layout_width">170dp</item>
