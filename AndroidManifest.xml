@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Prac3">
         <activity
+            android:name=".GroupStudyActivity"
+            android:exported="false"
+            android:label="@string/title_activity_group_study"
+            android:theme="@style/Theme.Prac3.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -19,4 +24,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

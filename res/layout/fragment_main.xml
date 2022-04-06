@@ -15,7 +15,7 @@
         <HorizontalScrollView android:layout_width="match_parent" android:layout_height="140dp" android:scrollbars="none" android:layout_marginTop="10dp">
             <LinearLayout android:layout_width="match_parent" android:layout_height="120dp">
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/b1"
+                    android:id="@+id/GroupStudy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardElevation="2dp"

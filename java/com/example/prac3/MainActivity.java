@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
         bottomNavigationView.setOnItemSelectedListener(this);
-        bottomNavigationView.setSelectedItemId(R.id.person);
+        bottomNavigationView.setSelectedItemId(R.id.home);
 
     }
     HomeFragment homeFragment = new HomeFragment();
