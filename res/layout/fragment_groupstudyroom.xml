@@ -32,8 +32,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/group_study_room_title"
-            android:textSize= "25dp"
+            android:textSize= "27sp"
             android:textStyle="bold"
+            android:fontFamily="@font/redhatdisplay"
             >
 
         </TextView>
@@ -43,12 +44,14 @@
             android:layout_width = "wrap_content"
             android:text="Create Room"
             android:textSize="15dp"
+            android:fontFamily="@font/poppinsblack"
             android:layout_gravity="center"
             android:textStyle="bold"
             android:background="@drawable/round_rect_create_room"
             android:padding="15dp"
             android:layout_marginBottom="20dp"
             android:drawableLeft="@drawable/pplus"
+            android:drawablePadding = "4dp"
             >
         </androidx.appcompat.widget.AppCompatButton>
     </LinearLayout>
@@ -64,7 +67,8 @@
             android:layout_height="wrap_content"
             android:text = "Open Sessions"
             android:textStyle="bold"
-            android:textSize="25dp"
+            android:textSize="22dp"
+            android:fontFamily="@font/redhatdisplay"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp">

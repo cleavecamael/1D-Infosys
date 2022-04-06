@@ -40,7 +40,15 @@ public class RoomListFragment extends Fragment {
                        popupWindow.dismiss();
                     }
                 });
+                Button create = (Button) popupView.findViewById(R.id.finalCreateRoom);
+                create.setOnClickListener(new View.OnClickListener() {
 
+                    public void onClick(View popupView) {
+                        Intent intent = new Intent(getActivity(), GroupStudyActivity.class);
+                        popupWindow.dismiss();
+                        startActivity(intent);
+                    }
+                });
             }
         });
         return view;

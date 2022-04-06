@@ -124,6 +124,7 @@
             android:background="#59FFFFFF" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/finalCreateRoom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
