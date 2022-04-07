@@ -13,9 +13,13 @@ import android.widget.PopupWindow;
 import android.widget.*;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class RoomListFragment extends Fragment {
 
+    RecyclerView recycleView;
     public RoomListFragment(){
         // require a empty public constructor
     }
@@ -23,7 +27,15 @@ public class RoomListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_groupstudyroom, container, false);
+        String[] s = {"Hello", "World","yes"};
+        System.out.println("yes");
+        recycleView = (RecyclerView) view.findViewById(R.id.roomsRecyclerView);
+        RoomAdapter adapter = new RoomAdapter(getActivity(), s);
+        recycleView.setAdapter(adapter);
+        recycleView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+
         View studyButton = view.findViewById(R.id.createRoomButton);
         studyButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) { ;
@@ -49,8 +61,11 @@ public class RoomListFragment extends Fragment {
                         startActivity(intent);
                     }
                 });
+
             }
         });
+
+
         return view;
     }
 }

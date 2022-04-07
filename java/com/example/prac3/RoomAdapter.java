@@ -1,5 +1,6 @@
 package com.example.prac3;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.*;
 import android.view.ViewGroup;
@@ -9,10 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.ViewHolder>{
-
-    private String[] localDataset;
-    public RoomAdapter(String[] dataset) {
+    Context context;
+    String[] localDataset;
+    public RoomAdapter(Context ct, String[] dataset) {
         localDataset = dataset;
+        context = ct;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -41,6 +43,7 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
             holder.getTextView().setText(localDataset[position]);
     }
 
