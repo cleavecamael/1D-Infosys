@@ -1,0 +1,51 @@
+package com.example.prac3;
+
+import android.view.LayoutInflater;
+import android.view.*;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.ViewHolder>{
+
+    private String[] localDataset;
+    public RoomAdapter(String[] dataset) {
+        localDataset = dataset;
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        private final TextView textView;
+
+        public TextView getTextView() {
+            return textView;
+        }
+
+        public ViewHolder(View view) {
+            super(view);
+
+            textView = (TextView) view.findViewById(R.id.groupName);
+        }
+
+    }
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        ViewGroup viewGroup;
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.room_card, parent, false);
+
+        return new ViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+            holder.getTextView().setText(localDataset[position]);
+    }
+
+    @Override
+    public int getItemCount() {
+        return localDataset.length;
+    }
+}

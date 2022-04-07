@@ -23,7 +23,7 @@
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="@color/white"
+            android:background="#00000000"
             app:srcCompat="@drawable/ic_arrow_back" />
 
         <ImageButton
@@ -32,7 +32,7 @@
             android:layout_height="30dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:background="@color/white"
+            android:background="#00000000"
             app:srcCompat="@drawable/ic_baseline_more_vert_24" />
     </RelativeLayout>
     <RelativeLayout
@@ -51,7 +51,8 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_pomo"
             android:text="25:00"
-            android:textColor="@color/black"
+            android:elevation="7dp"
+            android:textColor="@color/white"
             android:textSize="50sp">
 
         </TextView>
@@ -87,7 +88,7 @@
             android:layout_height="wrap_content"
             android:text="Binary Search Trees"
             android:textStyle = "bold"
-            android:textSize = "25dp">
+            android:textSize = "20dp">
 
         </TextView>
         <TextView
@@ -103,19 +104,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="30:00"
-            android:textSize = "25dp"
+            android:textSize = "15sp"
             android:layout_alignParentRight="true"
             android:layout_alignBottom="@id/topics"
             android:background = "@drawable/rounded_pomo"
             android:padding="5dp"
             android:textColor="#FFFFFF">
         </TextView>
+
         <View
             android:id="@+id/lineDivider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below = "@id/topics"
+            android:layout_below="@id/topics"
             android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
             android:background="#c0c0c0" />
         <TableLayout
             android:id="@+id/upcomingTaskTable"
@@ -132,21 +135,21 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignBottom="@id/topics"
                 android:padding="5dp"
-                android:layout_weight="0.5"
+                android:layout_weight="0.67"
                 >
             </TextView>
+
                 <TextView
-                    android:id = "@+id/FirstTaskStatus1"
+                    android:id="@+id/FirstTaskStatus1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Now"
-                    android:textSize = "15dp"
-                    android:layout_alignParentRight="true"
                     android:layout_alignBottom="@id/topics"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="0.33"
                     android:padding="5dp"
-                    android:layout_weight="0.5"
-                    >
-                </TextView>
+                    android:text="Now"
+                    android:textAlignment="textEnd"
+                    android:textSize="15dp"></TextView>
             </TableRow>
             <TableRow><TextView
                 android:id = "@+id/Secondtask"
@@ -157,7 +160,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignBottom="@id/topics"
                 android:padding="5dp"
-                android:layout_weight="0.5"
+                android:layout_weight="0.67"
                 >
             </TextView>
                 <TextView
@@ -166,10 +169,11 @@
                     android:layout_height="wrap_content"
                     android:text="@string/up_next"
                     android:textSize = "15dp"
+                    android:textAlignment="textEnd"
                     android:layout_alignParentRight="true"
                     android:layout_alignBottom="@id/topics"
                     android:padding="5dp"
-                    android:layout_weight="0.5"
+                    android:layout_weight="0.33"
                     >
                 </TextView>
             </TableRow>

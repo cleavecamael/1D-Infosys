@@ -29,28 +29,20 @@
         android:layout_marginRight="15dp"
         android:layout_marginBottom="30dp">
 
-        <FrameLayout
-            android:layout_width="170dp"
-            android:layout_height="wrap_content">
-
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="160dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="5dp"
                 android:background="@drawable/button_style1"
                 android:gravity="center|start"
+
                 android:paddingLeft="40dp"
                 android:text="Edit Profile"
                 android:textAllCaps="false"
                 android:textColor="@color/black" />
-        </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            >
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_alignParentEnd="true"
                 android:layout_width="160dp"
                 android:layout_height="50dp"
                 android:background="@drawable/button_style1"
@@ -62,72 +54,62 @@
                 android:paddingLeft="40dp"
                 android:textAllCaps="false"
                 android:text="Share Profile"/>
-        </FrameLayout>
+
     </RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Setting"
+        android:text="Settings"
         android:textColor="@color/black"
         android:paddingLeft="20dp"
+
         android:paddingBottom="15dp"
         android:textSize="20sp"/>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:drawableLeft="@drawable/profileperson"
+            android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:drawablePadding="10dp"
             android:gravity="start|center"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:paddingLeft="50dp"
-
             android:background="@drawable/button_style1"
             android:text="Manage Account"
             android:textColor="@color/black"
             android:textAllCaps="false"/>
 
 
-
-    </FrameLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp">
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:drawableLeft="@drawable/privacy"
+            android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:drawablePadding="10dp"
             android:gravity="start|center"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:paddingLeft="50dp"
             android:text="Privacy"
             android:textColor="@color/black"
             android:textAllCaps="false"
             android:background="@drawable/button_style1" />
 
-    </FrameLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
+            android:drawableLeft="@drawable/stats"
+            android:layout_marginBottom="15dp"
             android:layout_width="match_parent"
+            android:drawablePadding="10dp"
             android:layout_height="50dp"
             android:gravity="start|center"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:paddingLeft="50dp"
             android:text="My Statistics"
             android:textColor="@color/black"
             android:textAllCaps="false"
             android:background="@drawable/button_style1"/>
-    </FrameLayout>
 
 </LinearLayout>
