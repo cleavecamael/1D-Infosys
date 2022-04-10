@@ -30,21 +30,22 @@ public class RoomListFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_groupstudyroom, container, false);
         String[] s = {"Hello", "World","yes"};
-        System.out.println("yes");
         recycleView = (RecyclerView) view.findViewById(R.id.roomsRecyclerView);
         RoomAdapter adapter = new RoomAdapter(getActivity(), s);
         recycleView.setAdapter(adapter);
-        recycleView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+        recycleView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         View studyButton = view.findViewById(R.id.createRoomButton);
         studyButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) { ;
-
+                //Setup popup window when create room is clicked
                 int width = container.getWidth();
                 int height =container.getHeight();
+
                 View popupView = inflater.inflate(R.layout.create_room_popup, null);
                 PopupWindow popupWindow = new PopupWindow(popupView, width, height+400, true);
                 popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
+                //close the popup window when cross is clicked
                 ImageButton close = (ImageButton) popupView.findViewById(R.id.closeButton);
                 close.setOnClickListener(new View.OnClickListener() {
 
